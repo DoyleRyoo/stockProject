@@ -1,85 +1,118 @@
 body {
-  background: #0F172A;
-  color: white;
-  min-height: 100vh;
+  background: #f4f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1e293b;
 }
 
-.main-title {
-  font-size: 3rem;
+.main-card {
+  background: white;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.title {
+  font-size: 2.8rem;
   font-weight: 700;
-  color: #38BDF8;
 }
 
-.sub-title {
-  color: #94A3B8;
+.subtitle {
+  color: #64748b;
+  font-size: 1rem;
 }
 
-.card-box {
-  background: #1E293B;
-  border-radius: 20px;
-  padding: 24px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
-
-.custom-table {
-  color: white;
+.table {
   margin-bottom: 0;
 }
 
-.custom-table thead {
-  color: #38BDF8;
+.table thead th {
+  border-bottom: none;
+  padding: 18px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
-.custom-table tbody tr {
-  border-color: rgba(255,255,255,0.08);
+.table tbody td {
+  padding: 18px;
+  vertical-align: middle;
 }
 
-.custom-input {
-  background: #0F172A;
-  border: 1px solid #334155;
-  color: white;
+.table tbody tr {
+  transition: all 0.2s ease;
 }
 
-.custom-input:focus {
-  background: #0F172A;
-  color: white;
-  border-color: #38BDF8;
-  box-shadow: none;
+.table tbody tr:hover {
+  background-color: #f8fafc;
 }
 
-.save-btn {
-  background: #38BDF8;
-  color: white;
+.action-btn {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.action-btn:hover {
+  color: #0d6efd;
+}
+
+.dropdown-menu-custom {
+  min-width: 120px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.positive {
+  color: #16a34a;
   font-weight: 600;
 }
 
-.save-btn:hover {
-  background: #0ea5e9;
-  color: white;
+.negative {
+  color: #dc2626;
+  font-weight: 600;
 }
 
-.custom-modal {
-  background: #1E293B;
-  color: white;
+.neutral {
+  color: #64748b;
+  font-weight: 600;
 }
 
-.dropdown-menu-dark {
-  background: #0F172A;
-}
-
-.menu-btn {
-  background: transparent;
+.modal-content {
+  border-radius: 20px;
   border: none;
-  color: white;
-  font-size: 1.2rem;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
-.profit {
-  color: #dc3545;
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.form-control {
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.modal-title {
   font-weight: 700;
 }
 
-.loss {
-  color: #0d6efd;
+.sum-profit {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.sum-loss {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.sum-neutral {
+  color: #64748b;
   font-weight: 700;
 }
